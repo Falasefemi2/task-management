@@ -51,3 +51,5 @@ class TokenResponse(BaseModel):
 class UserRegisterResponse(BaseModel):
     message: str
     username: str
+    access_token: str  # JWT token for authentication
+    token_type: str = "Bearer"
